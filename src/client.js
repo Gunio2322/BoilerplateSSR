@@ -1,11 +1,30 @@
 import React from 'react';
-import { hydrateRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
-hydrateRoot(
+ReactDOM.hydrateRoot(
   document.getElementById('root'),
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
+
+
+// This file serves as the entry point for the client application. It renders the App component into the DOM.
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './App';
+// import { BrowserRouter } from 'react-router-dom';
+
+// ReactDOM.hydrateRoot(
+//   document.getElementById('root'),
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </React.StrictMode>
+// );
