@@ -33,3 +33,4 @@ Aplikacja będzie dostępna na http://localhost:3000
 - Routing po stronie serwera i klienta (react-router-dom)
 - styled-components do stylowania
 - Konfiguracja Webpack/Babel
+# Boilerplate
